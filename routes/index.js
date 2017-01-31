@@ -11,11 +11,11 @@ router.get('/expressMailer', function(req, res, next) {
 router.post('/expressMailer', function (req, res, next) {
 
 	var usr = req.body.usermail;
-     //console.log(usr);
+     console.log(usr);
      var sub = req.body.subject;
-     //console.log(sub);
+     console.log(sub);
      var comment = req.body.comment;
-     //console.log(comment);
+     console.log(comment);
   res.mailer.send('abc', {
     to: usr,  
     subject: sub, 
